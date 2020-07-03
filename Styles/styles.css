@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.container{
+    max-width: 1920px;
+    margin: auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header{
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    background-color: rgba(0, 0, 0, 0.342);
+    padding: 0px 15px;
+}
+
+header .row{
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .brand-name a{
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 600;
+    color: #ffffff;
+    text-transform: uppercase;
+    position: relative;
+}
+
+header .navbar{}
+
+header .navbar ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header .navbar ul li{
+    display: inline-block;
+    margin-left: 35px;
+
+}
+
+header .navbar ul li a{
+    font-size: 15px;
+    text-decoration: none;
+    line-height: 72px;
+    color: #ffffff;
+    font-weight: 600;
+    position: relative;
+
+}
+
+header .navbar ul li a.active::before{
+    content: '';
+    height: 1px;
+    background-color: #ffffff91;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    bottom: -1px;
+
+}
+
+.home{
+    min-height: 100vh; 
+    background-image: url('../img/heroback.png');
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* About */
+
+
+.about-section{
+    max-width: 100%;
+    flex: 0 0 100%;
+    display: flex;
+    flex-wrap: initial;
+    background-color: black;
+    padding: 1em;
+    margin: 0px;
+    
+}
+
+.column-left {
+    float: left; 
+    display: block;  
+    width: 70%;
+}
+
+.description{
+    color: red;
+    text-align: center;
+    letter-spacing: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+
+.about-section h3{
+    color: white;
+    text-align: left;
+    padding: 0;
+    font-size: 70px;  
+    font-weight: 600;
+    margin: 0 0 10px;
+    line-height: 1.2;
+    font-style: italic;
+}
+
+.bio{
+    padding-left: 5em;
+    text-align: center;
+    color: white;
+    text-justify: inter-word;
+    text-align: justify;
+}
+
+.column-right{
+    display: block;
+    width: 35%;
+    text-align: center;
+    border-left: 2px solid red;  
+    padding-top: 5em;
+}
+
+.cv-btn a{
+    text-decoration: none;
+    color: #ffffff
+}
