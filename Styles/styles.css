@@ -24,7 +24,7 @@ header{
     position: absolute;
     left: 0px;
     right: 0px;
-    background-color: rgba(0, 0, 0, 0.342);
+    background-color: rgba(0, 0, 0, 0.452);
     padding: 0px 15px;
 }
 
@@ -41,8 +41,6 @@ header .brand-name a{
     text-transform: uppercase;
     position: relative;
 }
-
-header .navbar{}
 
 header .navbar ul{
     list-style: none;
@@ -66,84 +64,39 @@ header .navbar ul li a{
 
 }
 
-header .navbar ul li a.active::before{
+header .navbar ul li a::before{
     content: '';
     height: 1px;
     background-color: #ffffff91;
-    width: 100%;
+    width: 0%;
     position: absolute;
-    left: 0px;
+    right: 0px;
     bottom: -1px;
+    transition: all .5s ease;
+}
 
+header .navbar ul li a:hover::before{
+    width: 100%;
+    left: 0;
+}
+
+/*So this basically shows static line on active menu, do u want this Taqi?*/
+header .navbar ul li a.active::before{
+    width: 100%;
+    left: 0;
 }
 
 .home{
     min-height: 100vh; 
     background-image: url('../img/heroback.png');
     background-size: cover;
-    background-position: center;
+    background-position: center ;
 }
 
 
-/* About */
+/* About Section Start*/
 
 
-.about-section{
-    max-width: 100%;
-    flex: 0 0 100%;
-    display: flex;
-    flex-wrap: initial;
-    background-color: black;
-    padding: 1em;
-    margin: 0px;
-    
-}
 
-.column-left {
-    float: left; 
-    display: block;  
-    width: 70%;
-}
 
-.description{
-    color: red;
-    text-align: center;
-    letter-spacing: 5px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 20px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    
-}
-
-.about-section h3{
-    color: white;
-    text-align: left;
-    padding: 0;
-    font-size: 70px;  
-    font-weight: 600;
-    margin: 0 0 10px;
-    line-height: 1.2;
-    font-style: italic;
-}
-
-.bio{
-    padding-left: 5em;
-    text-align: center;
-    color: white;
-    text-justify: inter-word;
-    text-align: justify;
-}
-
-.column-right{
-    display: block;
-    width: 35%;
-    text-align: center;
-    border-left: 2px solid red;  
-    padding-top: 5em;
-}
-
-.cv-btn a{
-    text-decoration: none;
-    color: #ffffff
-}
+/* About Section END*/
